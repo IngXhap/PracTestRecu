@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/img/imagen.jpeg);
+    background-size: cover;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.container__formulario{
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+.botom__formulario{
+    margin-top: 12px;
+    margin-left: 120px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: aqua;
+    border: 1px solid white;
+    
+}
+.inputs__container{
+    margin: 12px;
+}
+#colesterol, #glucosa, #hemoglobina{
+    width: 50px;
+}

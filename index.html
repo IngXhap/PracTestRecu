@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <form action="/consulta" method="post" class="formulario">
+
+        <div class="container__formulario">
+            <h1>Consultas</h1>
+            <div class="container__dni">
+                <label for="dni">DNI:</label>
+                <input type="tel" name="dni" id="dni" class="inputs__container" required placeholder="Ingrese su DNI">
+            </div>
+            <div class="container__nombres">
+                <label for="nombres">Nombres:</label>
+                <input type="text" name="nombres" id="nombres" class="inputs__container" required placeholder="Ingrese su nombre">
+            </div>
+            <div class="container__apellidos">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" class="inputs__container" required placeholder="Ingrese sus apellidos">
+            </div>
+            <div class="container__fecha__nacimiento">
+                <label for="Fecha__Nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha" class="inputs__container" required>
+            </div> 
+            <div class="container__sexo">
+                <label for="optionSelect">Sexo</label>
+                <select name="optionSelectSexo" id="optionSelectSexo">
+                    <option value="option1" disabled>Sexo</option>
+                    <option value="option2">Masculino</option>
+                    <option value="option3">Femenino</option>
+                </select>
+            </div>
+
+            <div class="container__celular">
+                <label for="Celular">Celular</label>
+                <input type="tel" name="celular" id="celular" class="inputs__container" required placeholder="Numero de Celular">
+            </div> 
+            <div class="container__correo">
+                <label for="Correo">Correo Electronico</label>
+                <input type="email" name="correo" id="correo" class="inputs__container" required placeholder="Ingrese su Correo">
+            </div>
+            <div class="container__direccion">
+                <label for="direccion">direccion</label>
+                <input type="text" name="direccion" id="direccion" class="inputs__container" required placeholder="Ingrese su direccion">
+            </div>
+            <div class="container__colesterol">
+                <label for="colesterol">Colesterol</label>
+                <input type="number" name="colesterol" id="colesterol" class="inputs__container" required>
+            </div>
+            <div class="container__glucosa">
+                <label for="glucosa">Glucosa</label>
+                <input type="number" name="glucosa" id="glucosa" class="inputs__container" required>
+            </div>
+            <div class="container__Hemoglobina">
+                <label for="hemoglobina">Hemoglobina</label>
+                <input type="number" name="hemoglobina" id="hemoglobina" class="inputs__container" required>
+            </div>
+            <div class="container__tipo__seguro">
+                <label for="optionSelect">tipo de seguro</label>
+                <select name="optionSelectSeguro" id="optionSelectSeguro">
+                    <option value="EssSalud">EssSalud</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            
+            
+            
+            <button type="submit" class="botom__formulario" id="boton__registrar" onclick="alerta()">
+                Enviar su consulta
+              </button>
+        </div>
+    </form>
+
+
+    <script>
+        function alerta(){
+            alert("Enviado de manera correcta")
+        }
+    </script>
+</body>
+</html>
